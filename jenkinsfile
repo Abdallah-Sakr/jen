@@ -5,7 +5,7 @@ pipeline {
         stage('Preparation') {
             steps {
                 echo 'prepare github repo....'
-                git branch: '*/main', url: 'https://github.com/Abdallah-Sakr/jen.git'
+                git branch: 'main', url: 'https://github.com/Abdallah-Sakr/jen.git'
             }
         }
         stage('Build-client') {
